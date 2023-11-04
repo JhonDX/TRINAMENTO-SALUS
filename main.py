@@ -1,7 +1,6 @@
 from tkinter import *
 
 import connect
-from connect import *
 
 class app():
     def __init__(self):
