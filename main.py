@@ -31,14 +31,11 @@ class app():
 
 
         #BUTTON
-
         Button(self.janela, command=self.login, text='Entrar', font='calibri', bg='green', fg='white').place(x=100,y=120)
-
 
         #BOTÃO SAIR
         Button(self.janela, text='Sair', command=self.janela.destroy, bg='red', fg='white', font='calibri').place(x=108,y=180)
-
-
+        
         self.janela.mainloop()
 
     def login(self):
