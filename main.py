@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 
 import connect
 
@@ -62,10 +63,22 @@ class app():
             pass
 
         if self.sesion_usr == True:
-            print('user ok')
+            pass
+        else:
+            messagebox.showinfo(title='Erro', message='Usuário incorreto')
+
         if self.sesion_pw == True:
-            print('senha ok')
             self.janela.destroy()
+            self.home()
+        else:
+            messagebox.showinfo(title='Erro', message='Senha incorreta')
+
+
+    def home(self):
+        self.home = Tk()
+        self.home.title('Home')
+        self.home.mainloop()
+
 
 
 
